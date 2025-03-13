@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.cio.listeners.CustomListener" />
+	</listeners>
+
+
+	<test name="Login">
+		<classes>
+			<class name="com.cio.testcases.SupportFirst" />
+		</classes>
+	</test>
+
+	<test name="CreateTicket">
+		<classes>
+			<class name="com.cio.testcases.TicketAdmin" />
+			<class name="com.cio.testcases.TicketAlertandOffenses" />
+			<class name="com.cio.testcases.TicketIT" />
+			<class name="com.cio.testcases.CreateTicketCIO" />
+			<class name="com.cio.testcases.CreateTicketFinance" />
+			<class name="com.cio.testcases.CreateTicketHr" />
+		</classes>
+	</test>
+
+	<test name="TakeTicket">
+		<classes>
+
+			<class name="com.cio.testcases.TakeTicket" />
+			<class name="com.cio.testcases.ProcurementTake" />
+			<class name="com.cio.testcases.TakeICCDepartment" />
+			<class name="com.cio.testcases.TakeTicketServerNetwork" />
+		</classes>
+	</test>
+
+	<test name="AssignTicket">
+		<classes>
+			<class name="com.cio.testcases.AssignAdmin" />
+			<class name="com.cio.testcases.AssignAlertandOffenses" />
+			<class name="com.cio.testcases.AssignIT" />
+			<class name="com.cio.testcases.AssigneeProductSupport" />
+			<class name="com.cio.testcases.AssigneeCIO" />
+		</classes>
+	</test>
+
+
+	<test name="TransferTicket">
+		<classes>
+			<class name="com.cio.testcases.TransferHRToFinance" />
+			<class name="com.cio.testcases.TransferCIOtoProductsupport" />
+			<class name="com.cio.testcases.ServerNetworktransferIT" />
+			<class name="com.cio.testcases.AdmintransferAlertandOffenses" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
